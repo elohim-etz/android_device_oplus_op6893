@@ -1,0 +1,4 @@
+service vendor.vibrator-op6893 /vendor/bin/hw/android.hardware.vibrator-service.op6893
+    class hal
+    user system
+    group system
