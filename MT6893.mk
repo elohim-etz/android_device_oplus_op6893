@@ -21,15 +21,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/oplus/MT6893/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common 2by2 stuff.
+$(call inherit-product, vendor/2by2/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_MT6893
+PRODUCT_NAME := MT6893
 PRODUCT_DEVICE := MT6893
 PRODUCT_BRAND := Oplus
 PRODUCT_MODEL := MT6893
 PRODUCT_MANUFACTURER := Oplus
+
+# 2by2 flags
+CUSTOM_PROCESSOR_INFO := MediaTek Dimensity 1200
+TARGET_BOARD_PLATFORM := mt6893
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES := BuildDesc=$(call normalize-path-list, "sys_mssi_64_cn_armv82-user-13-TP1A.220905.001-1677828988354-release-keys")

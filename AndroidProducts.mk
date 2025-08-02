@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_MT6893.mk
+    $(LOCAL_DIR)/MT6893.mk
