@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayPlatform \
     OplusDozeOverlay \
     SettingsOverlayPlatform \
-    SettingsProviderOverlay \
+    SettingsProviderOverlayPlatform \
     SystemUIOverlayPlatform \
     TelephonyOverlay \
     TetheringConfigOverlay \
