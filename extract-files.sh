@@ -119,6 +119,9 @@ function blob_fixup {
         system_ext/lib64/libimsma.so)
             "${PATCHELF}" --replace-needed "libsink.so" "libsink-mtk.so" "${2}"
             ;;
+        vendor/bin/hw/mtkfusionrild)
+            "${PATCHELF}" --add-needed "libutils_v32.so" "${2}"
+            ;;
     esac
 }
 
