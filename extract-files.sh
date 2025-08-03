@@ -121,6 +121,8 @@ function blob_fixup {
             ;;
         vendor/bin/hw/mtkfusionrild)
             "${PATCHELF}" --add-needed "libutils_v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder_v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_v32.so" "${2}"
             ;;
     esac
 }
