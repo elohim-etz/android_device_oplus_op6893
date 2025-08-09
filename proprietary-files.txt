@@ -1143,6 +1143,7 @@ odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc
 -odm/etc/vintf/manifest/manifest_oplus_charger.xml
 odm/lib/vendor.oplus.hardware.charger@1.0.so
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
+system/lib64/libshowlogo.so
 
 # DRM
 odm/lib/liboemcrypto.so
