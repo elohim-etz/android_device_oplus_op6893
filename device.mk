@@ -553,5 +553,9 @@ PRODUCT_PACKAGES += \
     libprocessgroup_shim \
     libshim
 
+# ADB Root
+PRODUCT_PACKAGES += \
+    adb_root
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oplus/op6893/op6893-vendor.mk)
