@@ -57,17 +57,14 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     WifiOverlayCupida \
     WifiOverlayDenniz \
+    LineageSDKOverlay \
     LineageSDKOverlayDenniz \
     LineageSettingsProviderOverlay \
     ApertureOverlay \
     KeyHandlerOverlay
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 # Enforce RRO targets
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
 # Updater
 AB_OTA_UPDATER := false
