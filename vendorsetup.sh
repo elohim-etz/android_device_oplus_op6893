@@ -7,6 +7,7 @@ restore_device_patches() {
     if [ -d "$PATCH_DIR" ]; then
         cd frameworks/base && git restore . && git clean -fd && cd -
         cd external/wpa_supplicant_8 && git restore . && git clean -fd && cd -
+        cd frameworks/native && git restore . && git clean -fd && cd -
     fi
 }
 
