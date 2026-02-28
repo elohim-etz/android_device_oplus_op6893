@@ -1811,7 +1811,6 @@ vendor/lib64/liboppo_arcSoftBokehEngine.so
 
 # Power
 vendor/lib/libpixelflinger.so
-vendor/lib64/libpowerhalwrap_vendor.so
 
 # PQ
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
