@@ -9,6 +9,8 @@
 /(vendor|odm)/lib(64)?/android\.hardware\.graphics\.common-V2-ndk_platform\.so                          u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/android\.hardware\.graphics\.common-V2-ndk\.so                                   u:object_r:same_process_hal_file:s0
 /(vendor|odm)/lib(64)?/vendor\.oplus\.hardware\.cammidasservice@1\.0\.so                                u:object_r:same_process_hal_file:s0
+/(vendor|odm)/lib(64)?/vendor\.oplus\.hardware\.orms@1\.0\.so                                           u:object_r:same_process_hal_file:s0
+/(vendor|odm)/lib(64)?/libormshalclient\.so                                                             u:object_r:same_process_hal_file:s0
 
 # Charging
 /dev/oplus_chg                                                                                          u:object_r:oplus_charger_device:s0
@@ -69,9 +71,6 @@
 /odm/vendor/firmware(/.*)?                                                                              u:object_r:vendor_firmware_file:s0
 /odm/firmware(/.*)?                                                                                     u:object_r:vendor_firmware_file:s0
 /mnt/odm_fw(/.*)?                                                                                       u:object_r:odm_fw_file:s0
-
-# ORMS Hal
-/(vendor|odm)/bin/hw/vendor\.oplus\.hardware\.orms\.ormsHalService@1\.0-service                         u:object_r:oplus_hal_ormsHal_exec:s0
 
 # Performance
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.performance@1\.0-service                              u:object_r:hal_performance_oplus_exec:s0
