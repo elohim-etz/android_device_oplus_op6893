@@ -474,7 +474,7 @@ PRODUCT_PACKAGES += \
     libtinyxml2-v34 \
     libutils-v32 \
     libhidlbase-v32.vendor \
-    libstagefright_foundation_v33 \
+    libstagefright_foundation-v33 \
     libtinyalsa-v32
 
 # WiFi
