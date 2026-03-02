@@ -83,7 +83,7 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('34 E8 87 40 B9', '34 28 02 80 52'),
     'vendor/bin/hw/android.hardware.wifi@1.0-service-lazy': blob_fixup()
         .replace_needed('libwifi-hal.so', 'libwifi-hal-mtk.so'),
-    'system/lib64/libem_support_jni.so': blob_fixup()
+    'system/lib*/libem_support_jni.so': blob_fixup()
         .add_needed('libjni_shim.so'),
     'vendor/lib64/hw/sensors.mt6893.so': blob_fixup()
         .add_needed('libsensors_shim.so'),
@@ -94,7 +94,7 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron',
     'vendor/lib*/libnvram.so',
     'odm/bin/hw/vendor.oplus.hardware.charger@1.0-service',
-    'vendor/lib64/libsysenv.so'): blob_fixup()
+    'vendor/lib*/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
     'odm/bin/hw/vendor.oplus.hardware.cammidasservice@1.0-service': blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
