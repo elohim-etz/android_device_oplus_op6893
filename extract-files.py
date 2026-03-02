@@ -13,6 +13,15 @@ from extract_utils.fixups_blob import (
     blob_fixups_user_type,
 )
 
+namespace_imports = [
+    'device/oplus/op6893',
+    'hardware/google/interfaces',
+    'hardware/google/pixel',
+    'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
+    'hardware/oplus',
+]
+
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libimsma.so': blob_fixup()
         .replace_needed('libsink.so', 'libsink-mtk.so'),
@@ -85,6 +94,7 @@ module = ExtractUtilsModule(
     'op6893',
     'oplus',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
