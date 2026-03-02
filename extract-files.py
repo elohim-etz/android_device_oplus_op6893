@@ -87,7 +87,9 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libjni_shim.so'),
     'vendor/lib64/hw/sensors.mt6893.so': blob_fixup()
         .add_needed('libsensors_shim.so'),
-    'vendor/lib64/libaalservice.so': blob_fixup()
+    ('vendor/lib*/libaalservice.so',
+    'vendor/lib64/libcam.utils.sensorprovider.so',
+    'vendor/lib64/liboplus_mtkcam_lightsensorprovider.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'libsensorndkbridge-v30.so'),
     ('vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron',
     'vendor/lib*/libnvram.so',
@@ -116,8 +118,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V2-ndk_platform.so', 'android.hardware.graphics.common-V2-ndk.so'),
     'vendor/lib*/libmtkisp_metadata.so': blob_fixup()
         .replace_needed('libui.so', 'libui_oplus.so'),
-    'vendor/lib64/libcam.utils.sensorprovider.so': blob_fixup()
-        .replace_needed('libsensorndkbridge.so', 'libsensorndkbridge-v30.so'),
     'vendor/lib64/libsensor_custom.so': blob_fixup()
         .binary_regex_replace(b'android.sensor.wise_light', b'android.sensor.light\x00\x00\x00\x00\x00')
         .sig_replace('5B 00 01 00', '05 00 00 00'),
