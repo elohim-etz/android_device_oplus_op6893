@@ -44,14 +44,14 @@ odm/firmware/awinic_haptic_gun_params.bin
 odm/firmware/awinic_haptic_params.bin
 odm/framework/vendor.oplus.hardware.performance-V1.0-java.jar
 odm/lib/lib_aurisys_lvimfs.so
-odm/lib/libnxprecord.so
+odm/lib/libnxprecord.so;FIX_SONAME
 odm/lib/libnxpsmartpaparser.so
-odm/lib/libnxpspeech.so
+odm/lib/libnxpspeech.so;FIX_SONAME
 odm/lib/vendor.oplus.hardware.performance@1.0.so;MODULE_SUFFIX=_odm
 odm/lib64/lib_aurisys_lvimfs.so
-odm/lib64/libnxprecord.so
+odm/lib64/libnxprecord.so;FIX_SONAME
 odm/lib64/libnxpsmartpaparser.so
-odm/lib64/libnxpspeech.so
+odm/lib64/libnxpspeech.so;FIX_SONAME
 odm/lib64/vendor.oplus.hardware.performance@1.0.so;MODULE_SUFFIX=_odm
 vendor/bin/mt6660_calibration
 vendor/bin/rt5512_calibration
@@ -88,7 +88,7 @@ vendor/lib/libktvsoundtouch.so
 vendor/lib/libktvvolume.so
 vendor/lib/libminiui.so
 vendor/lib/librt_extamp_intf.so
-vendor/lib/libspeech_enh_lib.so
+vendor/lib/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/libvow_ap_test_aa.so
 vendor/lib/libvow_ap_test_dd.so
@@ -98,7 +98,7 @@ vendor/lib/libvow_ap_test_nn.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib/vendor.oplus.hardware.performance@1.0.so
-vendor/lib/libalsautils.so:vendor/lib/libalsautils-v31.so
+vendor/lib/libalsautils.so:vendor/lib/libalsautils-v31.so;FIX_SONAME
 vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6893.so
@@ -134,12 +134,12 @@ vendor/lib64/libktvsoundtouch.so
 vendor/lib64/libktvvolume.so
 vendor/lib64/libminiui.so
 vendor/lib64/librt_extamp_intf.so
-vendor/lib64/libspeech_enh_lib.so
+vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib64/vendor.oplus.hardware.performance@1.0.so
-vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v31.so
+vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-v31.so;FIX_SONAME
 
 # Audio-configs
 odm/etc/audio/audio_device/common/audio_device.xml
@@ -791,7 +791,7 @@ odm/lib64/libWaterMark.so
 odm/lib64/lib_rectify.so
 odm/lib64/libaiseg.so
 odm/lib64/libalCFR.so
-odm/lib64/libanc_np-loader.so
+odm/lib64/libanc_np-loader.so;FIX_SONAME
 odm/lib64/libapsexif.so
 odm/lib64/libapsjpeg.so
 odm/lib64/libapspng.so
@@ -811,7 +811,7 @@ odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib.so
 odm/lib64/libtfavib.so
 odm/lib64/libtflite_mtk_static.so
-odm/lib64/libui.so:odm/lib64/libui_oplus.so
+odm/lib64/libui.so:odm/lib64/libui_oplus.so;FIX_SONAME
 odm/lib64/libwatermark_photo.so
 odm/lib64/ov02b10_mipi_raw_20615_tuning.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so;MODULE_SUFFIX=_odm
@@ -1225,7 +1225,7 @@ vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
 vendor/lib64/libmml.so
-vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libpixelflinger.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpqframework.so
@@ -1952,12 +1952,12 @@ odm/lib/vendor.oplus.hardware.oplusSensor@1.0.so
 odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so
 odm/lib64/oplus.sensors.ssc.so
 vendor/lib/libSensorSave.so
-vendor/lib/libsensorndkbridge.so:vendor/lib/libsensorndkbridge-v30.so
+vendor/lib/libsensorndkbridge.so:vendor/lib/libsensorndkbridge-v30.so;FIX_SONAME
 vendor/lib/librgbwlightsensor.so
 vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so
 vendor/lib64/hw/sensors.mt6893.so
 vendor/lib64/libSensorSave.so
-vendor/lib64/libsensorndkbridge.so:vendor/lib64/libsensorndkbridge-v30.so
+vendor/lib64/libsensorndkbridge.so:vendor/lib64/libsensorndkbridge-v30.so;FIX_SONAME
 vendor/lib64/libhwm-oplus.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
@@ -2062,7 +2062,7 @@ vendor/lib/libapmonitor_vendor.so
 vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
