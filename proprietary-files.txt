@@ -59,7 +59,6 @@ vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.mt6893.so
 vendor/lib/hw/audio.r_submix.mt6893.so
-vendor/lib/lib_bsscore.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
 vendor/lib/libaudio_engineer_test.so
@@ -781,11 +780,9 @@ odm/lib64/libCamera_imx766mipiraw20817_zHDR_Face_Capture.so
 odm/lib64/libCamera_imx766mipiraw20817_zHDR_Scene_Capture.so
 odm/lib64/libDeVIS.so
 odm/lib64/libEIS.so
-odm/lib64/libFilterWrapper.so
 odm/lib64/libOGLManager.so;DISABLE_CHECKELF
 odm/lib64/libRbsFlow.so
 odm/lib64/libRbsFlow_cap.so
-odm/lib64/libSuperTextWrapper.so
 odm/lib64/libVideoEnhance.so
 odm/lib64/libWaterMark.so
 odm/lib64/lib_rectify.so
@@ -817,28 +814,13 @@ odm/lib64/ov02b10_mipi_raw_20615_tuning.so
 odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so;MODULE_SUFFIX=_odm
 vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
-vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
-vendor/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
-vendor/lib/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
 vendor/lib/libMtkSpeechEnh.so
-vendor/lib/libcamdrv_imem.so
-vendor/lib/libcamdrv_isp.so
-vendor/lib/libcamdrv_tuning_mgr.so
-vendor/lib/libcamdrv_twin.so
 vendor/lib/libcamera_core_hwi.so;DISABLE_DEPS
-vendor/lib/libcameracustom.camera.sensors.so
-vendor/lib/libcameracustom.eis.so
-vendor/lib/libcameracustom.so
 vendor/lib/libcustomer_cameradata.so;DISABLE_DEPS
-vendor/lib/libdip_drv.so
-vendor/lib/libdip_imem.so
-vendor/lib/libdip_postproc.so
-vendor/lib/libeffecthal.base.so
 vendor/lib/libfgauge_gm30.so
 vendor/lib/libmtkares.so
 vendor/lib/libmtkcutils.so
 vendor/lib/libmtkhardware_legacy.so
-vendor/lib/libmtkisp_metadata.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtknetutils.so
 vendor/lib/libmtkproperty.so
@@ -849,7 +831,6 @@ vendor/lib/libmtksysutils.so
 vendor/lib/libocam_common.so
 vendor/lib/liboplus.aishutter.so;DISABLE_DEPS
 vendor/lib/liboplus_audio_config.so
-vendor/lib/liboplus_mtkcam_lightsensorprovider.so
 vendor/lib/liboplus_platform_hwi.so;DISABLE_DEPS
 vendor/lib/libstereoinfoaccessor_vsdof.so
 vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so
@@ -1544,13 +1525,9 @@ vendor/lib/libhfmanagerwrapper.so
 vendor/lib/libhwconfigurationutil.so
 vendor/lib/libicd_decoder.so
 vendor/lib/libimagebuffer_wrapper.so
-vendor/lib/libimageio.so
-vendor/lib/libimageio_plat_drv.so
-vendor/lib/libimageio_plat_pipe.so
 vendor/lib/libimgsensorca.so
 vendor/lib/libjpeg-alpha-oal_vendor.so
 vendor/lib/libjpeg-alpha_vendor.so
-vendor/lib/libmfllcore.so
 vendor/lib/libthha.so;DISABLE_DEPS
 vendor/lib/libmmprofile.so
 vendor/lib/libmp4enc_sa.ca7.so;DISABLE_DEPS
@@ -1649,7 +1626,6 @@ vendor/lib/audio_common-aidl-cpp.so
 vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libaaa_ltm.so
 vendor/lib/libaaa_ltmx.so
-vendor/lib/libainrcore.so
 vendor/lib/libaispq.so
 vendor/lib/libcustomer_testvision.so
 vendor/lib/libmidasserviceintf.so
@@ -1806,7 +1782,6 @@ odm/lib64/libolc_vnd.so
 odm/lib/vendor.oplus.hardware.orms@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
 odm/lib64/libormshalclient.so
-vendor/lib/liboppo_arcSoftBokehEngine.so
 vendor/lib64/liboppo_arcSoftBokehEngine.so
 
 # Power
@@ -1900,13 +1875,11 @@ vendor/lib/libcvsd_mtk.so
 vendor/lib/libdynamiclog.so
 vendor/lib/liblpcnr.so
 vendor/lib/libmsbc_mtk.so
-vendor/lib/libmsnr.so
 vendor/lib/libmtcloader.so
 vendor/lib/libpkm.so;DISABLE_DEPS
 vendor/lib/libsimlock.so
 vendor/lib/libsimmelock.so
 vendor/lib/libsysenv.so
-vendor/lib/libtranslator_mapi_v3.0.so
 vendor/lib/libtranslator_mdmi_v2.8.2.so;DISABLE_DEPS
 vendor/lib/libtranslator_utils.so;DISABLE_DEPS
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
