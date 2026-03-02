@@ -1569,6 +1569,7 @@ vendor/lib64/libjpeg-alpha-oal_vendor.so
 vendor/lib64/libjpeg-alpha_vendor.so
 vendor/lib64/libmfllcore.so
 vendor/lib64/libmmprofile.so
+vendor/lib64/libmtkmipc-ril.so
 vendor/lib64/libthha.so;DISABLE_DEPS
 vendor/lib64/libvcodec_oal.so;DISABLE_DEPS
 vendor/lib64/libvcodecdrv_header_stub.so
