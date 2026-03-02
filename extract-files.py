@@ -12,6 +12,10 @@ from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
 )
+from extract_utils.fixups_lib import (
+    lib_fixups,
+    lib_fixups_user_type,
+)
 
 namespace_imports = [
     'device/oplus/op6893',
@@ -21,6 +25,36 @@ namespace_imports = [
     'hardware/mediatek/libmtkperf_client',
     'hardware/oplus',
 ]
+
+def lib_fixup_odm_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'odm' else None
+
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}_{partition}' if partition == 'vendor' else None
+
+lib_fixups: lib_fixups_user_type = {
+    **lib_fixups,
+    (
+        'libadsprpc',
+        'vendor.oplus.hardware.performance@1.0',
+        'libstdc++',
+        'android.hardware.graphics.allocator@2.0',
+        'android.hardware.graphics.allocator@3.0',
+        'android.hardware.graphics.allocator@4.0',
+        'libcamera_core_hwi',
+        'libocam_common',
+        'liboplus_platform_hwi',
+        'vendor.oplus.hardware.cammidasservice@1.0',
+        'vendor.oplus.hardware.biometrics.fingerprint@2.1',
+        'vendor.oplus.hardware.commondcs@1.0',
+        'android.hardware.keymaster-V3-ndk_platform',
+        'libneuron_runtime',
+    ): lib_fixup_odm_suffix,
+    (
+        'vendor.mediatek.hardware.videotelephony@1.0',
+        'vendor.oplus.hardware.radio-V1-ndk_platform',
+    ): lib_fixup_vendor_suffix,
+}
 
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libimsma.so': blob_fixup()
@@ -94,6 +128,7 @@ module = ExtractUtilsModule(
     'op6893',
     'oplus',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 
