@@ -1213,6 +1213,11 @@ vendor/lib64/libscltm.so
 vendor/lib64/libudf.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
+# USB
+vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
+vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
+vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
+
 # Connectivity (Firmware) - from op5339l1
 vendor/firmware/soc3_0_ram_bt_1_1_hdr.bin
 vendor/firmware/soc3_0_ram_bt_1a_1_hdr.bin
