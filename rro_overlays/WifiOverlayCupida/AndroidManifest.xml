@@ -4,7 +4,7 @@
     <application android:hasCode="false" />
     <overlay android:targetPackage="com.android.wifi.resources"
              android:isStatic="true"
-             android:priority="0"
+             android:priority="1000"
              android:requiredSystemPropertyName="ro.vendor.device"
              android:requiredSystemPropertyValue="cupida"/>
 </manifest>
