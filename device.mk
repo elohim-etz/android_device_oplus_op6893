@@ -57,7 +57,6 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     WifiOverlayCupida \
     WifiOverlayDenniz \
-    LineageSDKOverlayDenniz \
     ApertureOverlay \
     KeyHandlerOverlay
 
