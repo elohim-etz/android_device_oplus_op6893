@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_op6893.mk
+    $(LOCAL_DIR)/custom_op6893.mk
