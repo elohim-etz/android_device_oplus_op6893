@@ -74,7 +74,8 @@ blob_fixups: blob_fixups_user_type = {
     'system/lib64/libem_support_jni.so': blob_fixup()
         .add_needed('libjni_shim.so'),
     'vendor/lib64/hw/sensors.mt6893.so': blob_fixup()
-        .add_needed('libsensors_shim.so'),
+        .add_needed('libsensors_shim.so')
+        .add_needed('libbase_shim.so'),
     'vendor/lib64/libaalservice.so': blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'libsensorndkbridge-v30.so'),
     'vendor/lib/libcodec2_vndk-mtk.so': blob_fixup()
