@@ -24,6 +24,34 @@ $(call inherit-product, device/oplus/op6893/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Axion Stuff
+AXION_CAMERA_REAR_INFO := 50,8
+AXION_CAMERA_FRONT_INFO := 32
+AXION_MAINTAINER := 𝙴𝙻𝙾𝙷𝙸𝙼
+AXION_PROCESSOR := MT6893
+
+# CPU governor support
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+PERF_ANIM_OVERRIDE := true
+
+# AxionFx
+TARGET_INCLUDE_AXFX := true
+
+# LOS Prebuilts
+TARGET_INCLUDES_LOS_PREBUILTS := true
+
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# BCR
+TARGET_PREBUILT_BCR := false
+
+TARGET_IS_LOW_RAM := false
+
+persist.sys.perf.scroll_opt = true
+persist.sys.perf.scroll_opt.heavy_app = 1
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_op6893
 PRODUCT_DEVICE := op6893
